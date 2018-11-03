@@ -10,13 +10,13 @@
 .name {
     position:absolute;
     top:60px;
-    left:10%;
-    display:block;
-    padding:20px 50px 20px 50px;
+    left:80px;
+    width:160px;
+    padding:20px 30px 20px 30px;
     background-color:#4aaaa5;
     color:#ffffff;
     line-height:30px;
-    font-size:40px;
+    font-size:36px;
     font-family:'Georgia', Times, Times New Roman, serif;
     letter-spacing:1px;
 }
@@ -24,7 +24,7 @@
 .navigation {
     position:absolute;
     top:80px;
-    right:10%;
+    right:80px;
 }
 
 .navigation * {
@@ -38,7 +38,7 @@
 }
 
 .navigation li a {
-    width:100px;
+    width:50px;
     height:30px;
     padding:20px;
     text-decoration:none;
@@ -66,7 +66,7 @@
     position:relative;
     top:30px;
     width:75%;
-    height:75%;
+    height:550px;
     margin:0 auto;
     padding:30px;
     background-color:#ffffff;
@@ -121,6 +121,7 @@
     text-align:center;
     background-image: url("../images/what-the-hex.png");
     color:#ffffff;
+    margin:20px;
 }
 
 .portfolio-box-text {
@@ -144,7 +145,6 @@
 .portfolio-box:hover {
     background-color:#ffffff;
     color:#777777;
-    border:2px solid lightgray;
 }
 
 /* sticky footer */
@@ -173,13 +173,76 @@ body {
 
 /* Media queries */
 @media screen and (max-width: 980px) {
+    .content {
+        width:50%;
+        height:75%;
+    }
 
+    .portfolio-box {
+        width:150px;
+        height:150px;
+    }
+
+    .portfolio-box-text {
+        width:150px;
+        height:50px;
+        font-size:10px;
 }
 
 @media screen and (max-width: 768px) {
+    .content {
+        width:500px;
+    }
 
+    .name {
+        left:80px;
+    }
+
+    .navigation {
+        right:80px;
+        font-size:14px;
+    }
+
+    .portfolio-box {
+        width:150px;
+        height:150px;
+    }
+
+    .portfolio-box-text {
+        width:150px;
+        height:50px;
+        font-size:10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
-    
+    .content {
+        width:500px;
+    }
+
+    .name {
+        top:0;
+        left:0;
+        width:100%;
+        text-align:center;
+    }
+
+    .navigation {
+        top:90px;
+        left:160px;
+        right:0;
+        width:100%;
+        font-size:14px;
+    }
+
+    .portfolio-box {
+        width:150px;
+        height:150px;
+    }
+
+    .portfolio-box-text {
+        width:150px;
+        height:50px;
+        font-size:10px;
+    }
 }
